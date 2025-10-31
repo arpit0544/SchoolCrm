@@ -189,3 +189,14 @@ export interface DashboardStats {
   activeTransport: number;
   libraryBooks: number;
 }
+
+export interface TimetableEntry {
+  id: string;
+  subject: string;
+  time: string;
+  class: string;
+  section: string;
+  teacher: string;
+  day: string;
+  room?: string;
+}

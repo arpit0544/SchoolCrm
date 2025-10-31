@@ -3,10 +3,14 @@ import { LoginPage } from './components/auth/LoginPage';
 import { DashboardLayout } from './components/layout/DashboardLayout';
 import { AdminDashboard } from './components/pages/AdminDashboard';
 import { StudentsPage } from './components/pages/StudentsPage';
+import { TeachersPage } from './components/pages/TeachersPage';
 import { FeesPage } from './components/pages/FeesPage';
 import { AttendancePage } from './components/pages/AttendancePage';
 import { ExamsPage } from './components/pages/ExamsPage';
+import { TimetablePage } from './components/pages/TimetablePage';
 import { TransportPage } from './components/pages/TransportPage';
+import { LibraryPage } from './components/pages/LibraryPage';
+import { ReportsPage } from './components/pages/ReportsPage';
 import { AnnouncementsPage } from './components/pages/AnnouncementsPage';
 import { SettingsPage } from './components/pages/SettingsPage';
 import { User, UserRole } from './types';
@@ -62,7 +66,7 @@ function App() {
         case 'students':
           return <StudentsPage />;
         case 'teachers':
-          return <ComingSoonPage title="Teachers Management" />;
+          return <TeachersPage />;
         case 'attendance':
           return <AttendancePage />;
         case 'fees':
@@ -70,17 +74,17 @@ function App() {
         case 'exams':
           return <ExamsPage />;
         case 'timetable':
-          return <ComingSoonPage title="Timetable Management" />;
+          return <TimetablePage />;
         case 'transport':
           return <TransportPage />;
         case 'library':
-          return <ComingSoonPage title="Library Management" />;
+          return <LibraryPage />;
         case 'reports':
-          return <ComingSoonPage title="Reports & Analytics" />;
+          return <ReportsPage />;
         case 'announcements':
           return <AnnouncementsPage />;
         case 'settings':
-          return <ComingSoonPage title="Settings" />;
+          return <SettingsPage />;
         default:
           return <AdminDashboard />;
       }
@@ -98,7 +102,7 @@ function App() {
         case 'marks-entry':
           return <ComingSoonPage title="Marks Entry" />;
         case 'timetable':
-          return <ComingSoonPage title="My Timetable" />;
+          return <TimetablePage />;
         case 'homework':
           return <ComingSoonPage title="Homework" />;
         case 'announcements':
@@ -120,11 +124,11 @@ function App() {
         case 'results':
           return <ComingSoonPage title="My Results" />;
         case 'timetable':
-          return <ComingSoonPage title="Timetable" />;
+          return <TimetablePage />;
         case 'homework':
           return <ComingSoonPage title="Homework" />;
         case 'library':
-          return <ComingSoonPage title="Library" />;
+          return <LibraryPage />;
         case 'announcements':
           return <AnnouncementsPage />;
         default:
@@ -146,7 +150,7 @@ function App() {
         case 'results':
           return <ComingSoonPage title="Results" />;
         case 'timetable':
-          return <ComingSoonPage title="Timetable" />;
+          return <TimetablePage />;
         case 'transport':
           return <TransportPage />;
         case 'announcements':

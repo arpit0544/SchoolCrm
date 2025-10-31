@@ -1,4 +1,4 @@
-import { Student, Teacher, Parent, Class, Attendance, Fee, Exam, Result, Transport, LibraryBook, BookIssue, Announcement, Staff, DashboardStats } from '../types';
+import { Student, Teacher, Parent, Class, Attendance, Fee, Exam, Result, Transport, LibraryBook, BookIssue, Announcement, Staff, DashboardStats, TimetableEntry } from '../types';
 
 export const mockStudents: Student[] = [
   {
@@ -373,3 +373,56 @@ export const mockDashboardStats: DashboardStats = {
   activeTransport: 8,
   libraryBooks: 2450,
 };
+
+export const mockTimetable: TimetableEntry[] = [
+  {
+    id: '1',
+    subject: 'Mathematics',
+    time: '8:00 AM - 9:00 AM',
+    class: '10',
+    section: 'A',
+    teacher: 'Dr. Sanjay Mehta',
+    day: 'Monday',
+    room: 'Room 101',
+  },
+  {
+    id: '2',
+    subject: 'English',
+    time: '9:00 AM - 10:00 AM',
+    class: '10',
+    section: 'A',
+    teacher: 'Mrs. Kavita Singh',
+    day: 'Monday',
+    room: 'Room 102',
+  },
+  {
+    id: '3',
+    subject: 'Physics',
+    time: '10:00 AM - 11:00 AM',
+    class: '10',
+    section: 'A',
+    teacher: 'Dr. Sanjay Mehta',
+    day: 'Monday',
+    room: 'Lab 1',
+  },
+  {
+    id: '4',
+    subject: 'Chemistry',
+    time: '11:30 AM - 12:30 PM',
+    class: '10',
+    section: 'A',
+    teacher: 'Mr. Ramesh Patel',
+    day: 'Monday',
+    room: 'Lab 2',
+  },
+  {
+    id: '5',
+    subject: 'Physical Education',
+    time: '2:00 PM - 3:00 PM',
+    class: '10',
+    section: 'A',
+    teacher: 'Mr. Suresh Kumar',
+    day: 'Monday',
+    room: 'Sports Ground',
+  },
+];
